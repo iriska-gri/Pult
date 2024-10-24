@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1175</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1175</width>
+    <height>751</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1175</width>
+    <height>751</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>ПуЗо - Пульт Управления Загрузками Обновленный</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_2013">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Если не срабатывает, то&lt;span style=&quot; font-weight:600;&quot;&gt; &amp;quot;Опции&amp;quot; - &amp;quot;Настройки&amp;quot; - &amp;quot;Настройки&amp;quot;,&lt;/span&gt; где надо указать верный путь до Excel 2013&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="statusTip">
+     <string>Дашборд 2013</string>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(0, 170, 0,255), stop:0.05 rgba(0, 170,03, 255), stop:0.935 rgba(239, 236, 55, 255));</string>
+    </property>
+    <property name="text">
+     <string>2013</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="All_bez_back">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Запуск процедуры ALL_BEZ_BACK на 38 сервере</string>
+    </property>
+    <property name="statusTip">
+     <string>Запуск процедуры ALL_BEZ_BACK</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(107, 90,17,255) stop:0.935 rgba(247, 197, 163, 255));</string>
+    </property>
+    <property name="text">
+     <string>ALL_BEZ_BACK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AIS_btn">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>260</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Залить АИС</string>
+    </property>
+    <property name="statusTip">
+     <string>Залить АИС</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(112, 48,160,255) stop:0.935 rgba(223, 201, 239, 255));</string>
+    </property>
+    <property name="text">
+     <string>АИС FKT</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>670</y>
+      <width>1151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Sroki_Svod_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Запуск процедуры SROKI_SVOD</string>
+    </property>
+    <property name="statusTip">
+     <string>Запуск процедуры SROKI_SVOD</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(107, 90,17,255) stop:0.935 rgba(247, 197, 163, 255));</string>
+    </property>
+    <property name="text">
+     <string>SROKI_SVOD</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Matrica_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Запуск процедуры MATRICA</string>
+    </property>
+    <property name="statusTip">
+     <string>Запуск процедуры MATRICA</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(197, 90,17,255) stop:0.935 rgba(247, 197, 163, 255));</string>
+    </property>
+    <property name="text">
+     <string>Matrica</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Prosrozka_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Запуск процедуры PROSROZKA</string>
+    </property>
+    <property name="statusTip">
+     <string>Запуск процедуры PROSROZKA</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(197, 90,17,255) stop:0.935 rgba(247, 197, 163, 255));</string>
+    </property>
+    <property name="text">
+     <string>Prosrozka</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BLACK_Q_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Запуск процедуры BLACK_Q</string>
+    </property>
+    <property name="statusTip">
+     <string>Запуск процедуры BLACK_Q</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(107, 90,17,255) stop:0.935 rgba(247, 197, 163, 255));</string>
+    </property>
+    <property name="text">
+     <string>BLACK_Q</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SPY_MIN_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Запуск процедуры BIG_GREEN</string>
+    </property>
+    <property name="statusTip">
+     <string>Запуск процедуры BIG_GREEN</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(197, 90,17,255) stop:0.935 rgba(247, 197, 163, 255));</string>
+    </property>
+    <property name="text">
+     <string>SPY_MINI</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="prosrozka_exc">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>140</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Если не срабатывает, то&lt;span style=&quot; font-weight:600;&quot;&gt; &amp;quot;Опции&amp;quot; - &amp;quot;Настройки&amp;quot; - &amp;quot;Настройки&amp;quot;,&lt;/span&gt; где надо указать верный путь до Excel 2013&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="statusTip">
+     <string>Открыть просрочку</string>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(0, 170, 0,255), stop:0.05 rgba(0, 170,03, 255), stop:0.935 rgba(239, 236, 55, 255));</string>
+    </property>
+    <property name="text">
+     <string>Просрочка</string>
+    </property>
+    <property name="icon">
+     <iconset theme="Excel">
+      <normaloff>../../../.designer/backup</normaloff>../../../.designer/backup</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="black_q_exc">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>170</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Если не срабатывает, то&lt;span style=&quot; font-weight:600;&quot;&gt; &amp;quot;Опции&amp;quot; - &amp;quot;Настройки&amp;quot; - &amp;quot;Настройки&amp;quot;,&lt;/span&gt; где надо указать верный путь до Excel 2013&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="statusTip">
+     <string>Открыть Черный ДБ</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(0, 170, 0,255), stop:0.05 rgba(0, 170,03, 255), stop:0.935 rgba(239, 236, 55, 255));</string>
+    </property>
+    <property name="text">
+     <string>Черный ДБ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="spy_min_exc">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>200</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Если не срабатывает, то&lt;span style=&quot; font-weight:600;&quot;&gt; &amp;quot;Опции&amp;quot; - &amp;quot;Настройки&amp;quot; - &amp;quot;Настройки&amp;quot;,&lt;/span&gt; где надо указать верный путь до Excel 2013&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="statusTip">
+     <string>Открыть Биг Грин</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(0, 170, 0,255), stop:0.05 rgba(0, 170,03, 255), stop:0.935 rgba(239, 236, 55, 255));</string>
+    </property>
+    <property name="text">
+     <string>Шпион</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>860</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_106">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>80</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Залить 106. С галкой справа займет много времени</string>
+    </property>
+    <property name="statusTip">
+     <string>Залить 106</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(112, 48,160,255) stop:0.935 rgba(223, 201, 239, 255));</string>
+    </property>
+    <property name="text">
+     <string>106</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="LinkBox">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>0</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Pronto</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Глоссарий</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Заявки TFC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Кластер</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Мониторинг</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Саппорт</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Файловое хранилище</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>0</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Сайты:</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendar107">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>30</y>
+      <width>311</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Невероятно, но это календарь )</string>
+    </property>
+    <property name="gridVisible">
+     <bool>false</bool>
+    </property>
+    <property name="dateEditEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>70</y>
+      <width>501</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>25</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>База 107</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reservButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>610</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Забрать базы данных - дело долгое и для сервера не легкое. Запускай вечером.</string>
+    </property>
+    <property name="statusTip">
+     <string>Сделать резервную копию</string>
+    </property>
+    <property name="text">
+     <string>Резерв 38</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="FileAisInfo">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>260</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Количество строк в файле</string>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>6</number>
+    </property>
+    <property name="mode">
+     <enum>QLCDNumber::Dec</enum>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Filled</enum>
+    </property>
+    <property name="value" stdset="0">
+     <double>53871.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelAisText">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>240</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Строк базе на момент последней заливки</string>
+    </property>
+    <property name="text">
+     <string>В базе:</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="FileAisInfo_base">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>260</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Строк базе на момент последней заливки</string>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>6</number>
+    </property>
+    <property name="mode">
+     <enum>QLCDNumber::Dec</enum>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Filled</enum>
+    </property>
+    <property name="value" stdset="0">
+     <double>53871.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelAisText_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>240</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Количество строк в файле</string>
+    </property>
+    <property name="text">
+     <string>В Файле:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reserv_adress">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>580</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>10.252.45.177</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget101">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>110</y>
+      <width>581</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="statusTip">
+     <string>Информация по 101. Сколько каждой ЖС находится в таблице</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation">
+     <bool>false</bool>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>10</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>290</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>ЖС</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Всего</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QCheckBox" name="checkBox106">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>86</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Выполнять-ли дистинкт таблицы после загрузки? (занимает много времени)</string>
+    </property>
+    <property name="text">
+     <string>Дистинкт после заливки</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="info106labelTime">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>79</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Время последней заливки 106</string>
+    </property>
+    <property name="text">
+     <string>Предыдущая заливка</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="date106Info">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>79</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Время последней заливки 106</string>
+    </property>
+    <property name="text">
+     <string>date106Info</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="vsesrazu">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>302</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Запуск процедуры VSESRAZU</string>
+    </property>
+    <property name="statusTip">
+     <string>Запуск процедуры VSESRAZU</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(197, 90,17,255) stop:0.935 rgba(247, 197, 163, 255));</string>
+    </property>
+    <property name="text">
+     <string>VseSrazu</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="send_daily_stat">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>300</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отправить ежедн.</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="changedinfo">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>580</y>
+      <width>271</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="statusTip">
+     <string>Что изменилось с последней резервной копии</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation">
+     <bool>false</bool>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>10</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>137</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Таблица</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Когда</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="labelchanged">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>550</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Время создания резервной копии</string>
+    </property>
+    <property name="text">
+     <string>Что поменялось</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BIG_ZAP">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Запуск процедуры BIG_ZAP</string>
+    </property>
+    <property name="statusTip">
+     <string>Запуск процедуры BIG_ZAP</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(197, 90,17,255) stop:0.935 rgba(247, 197, 163, 255));</string>
+    </property>
+    <property name="text">
+     <string>BIG_ZAP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toloko">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>340</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Толоко</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="blue_submit">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>350</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>17.09.2020</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="priloj_4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>380</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Если не срабатывает, то&lt;span style=&quot; font-weight:600;&quot;&gt; &amp;quot;Опции&amp;quot; - &amp;quot;Настройки&amp;quot; - &amp;quot;Настройки&amp;quot;,&lt;/span&gt; где надо указать верный путь до Excel 2013&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(0, 170, 0,255), stop:0.05 rgba(0, 170,03, 255), stop:0.935 rgba(239, 236, 55, 255));</string>
+    </property>
+    <property name="text">
+     <string>Прилож. 4</string>
+    </property>
+    <property name="icon">
+     <iconset theme="Excel">
+      <normaloff>../../../.designer/backup</normaloff>../../../.designer/backup</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BIG_SREZ">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>340</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Запуск процедуры BIG_SREZ</string>
+    </property>
+    <property name="statusTip">
+     <string>Запуск процедуры BIG_SREZ</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(197, 90,17,255) stop:0.935 rgba(247, 197, 163, 255));</string>
+    </property>
+    <property name="text">
+     <string>BIG_Срез</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="andreeva">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>380</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Андреева</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="priloj_4_srez">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>380</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Если не срабатывает, то&lt;span style=&quot; font-weight:600;&quot;&gt; &amp;quot;Опции&amp;quot; - &amp;quot;Настройки&amp;quot; - &amp;quot;Настройки&amp;quot;,&lt;/span&gt; где надо указать верный путь до Excel 2013&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(0, 170, 0,255), stop:0.05 rgba(0, 170,03, 255), stop:0.935 rgba(239, 236, 55, 255));</string>
+    </property>
+    <property name="text">
+     <string>Прилож. 4 срез</string>
+    </property>
+    <property name="icon">
+     <iconset theme="Excel">
+      <normaloff>../../../.designer/backup</normaloff>../../../.designer/backup</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="otchet2859198">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>340</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Если не срабатывает, то&lt;span style=&quot; font-weight:600;&quot;&gt; &amp;quot;Опции&amp;quot; - &amp;quot;Настройки&amp;quot; - &amp;quot;Настройки&amp;quot;,&lt;/span&gt; где надо указать верный путь до Excel 2013&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(0, 170, 0,255), stop:0.05 rgba(0, 170,03, 255), stop:0.935 rgba(239, 236, 55, 255));</string>
+    </property>
+    <property name="text">
+     <string>2859198_Otchet</string>
+    </property>
+    <property name="icon">
+     <iconset theme="Excel">
+      <normaloff>../../../.designer/backup</normaloff>../../../.designer/backup</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adi">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>590</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>all data</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>610</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>SROKI_SVOD</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>630</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>ALL_BEZ_BACK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adinf">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>590</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>Нет данных</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SROKINF">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>610</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>Нет данных</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ABinf">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>630</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>Нет данных</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>580</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/grog.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="froginf">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>540</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>Лягушка-инфо</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>530</y>
+      <width>1201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkallTime">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>550</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Ставим галку чтобы скопировать весь сервер</string>
+    </property>
+    <property name="text">
+     <string>Копия всего</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>240</y>
+      <width>311</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>ККТ-инфо</string>
+    </property>
+    <widget class="QLabel" name="kkText">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>301</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="statusTip">
+      <string>Информация по ККТ, ОКВЭД и другим базам и таблицам за последнюю неделю</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="smile">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/smile.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="AisInfo">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>260</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Когда обновлялся АИС</string>
+    </property>
+    <property name="text">
+     <string>AISINFO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelAisText_3">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>240</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Когда обновлялся АИС</string>
+    </property>
+    <property name="text">
+     <string>Когда:</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>0</y>
+      <width>20</width>
+      <height>298</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>26</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/foxnobg.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text107Time0">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>421</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="statusTip">
+     <string>Время заливок 107 на выбранную дату</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_25">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Залить 25</string>
+    </property>
+    <property name="statusTip">
+     <string>Залить 25</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(112, 48,160,255) stop:0.935 rgba(223, 201, 239, 255));</string>
+    </property>
+    <property name="text">
+     <string>25 FGT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="renew_kkt">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>500</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Обновить базу данных ЦЕН, ККТ, ОКВЭД и прочего в соответствии с выбранной датой на календаре</string>
+    </property>
+    <property name="text">
+     <string>Обновить ККТ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="kktnalog">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>500</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Скачать отчеты с Кластера для kkt@nalog.ru. Уйдет на рабочий стол</string>
+    </property>
+    <property name="text">
+     <string>Cluster.ZIP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_reestr">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Если не срабатывает, то&lt;span style=&quot; font-weight:600;&quot;&gt; &amp;quot;Опции&amp;quot; - &amp;quot;Настройки&amp;quot; - &amp;quot;Настройки&amp;quot;,&lt;/span&gt; где надо указать верный путь до Excel 2013&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="statusTip">
+     <string>Дашборд 2013</string>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(0, 170, 0,255), stop:0.05 rgba(0, 170,03, 255), stop:0.935 rgba(239, 236, 55, 255));</string>
+    </property>
+    <property name="text">
+     <string>Реестр заявок</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_106_fc">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>500</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Залить 106. С галкой справа займет много времени</string>
+    </property>
+    <property name="statusTip">
+     <string>Залить 106</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(149, 228,117,255) stop:0.8 rgba(203, 147, 255, 255));</string>
+    </property>
+    <property name="text">
+     <string>106 FOREIGN KEY TEST</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="adinf_2">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>590</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>Нет данных</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SROKINF_2">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>610</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>Нет данных</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ABinf_2">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>630</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Сводные данные таблиц, по которым прыгает ЛЯГУШКА</string>
+    </property>
+    <property name="text">
+     <string>Нет данных</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>570</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Приход:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>570</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>В базе</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_107">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Залить 107. Необходим файл выгрузки </string>
+    </property>
+    <property name="statusTip">
+     <string>Залить 107</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0   rgba(112, 48,160,255) stop:0.935 rgba(223, 201, 239, 255));</string>
+    </property>
+    <property name="text">
+     <string>107 FKT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="prazdn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>424</y>
+      <width>311</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/prazdn.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <zorder>btn_2013</zorder>
+   <zorder>All_bez_back</zorder>
+   <zorder>AIS_btn</zorder>
+   <zorder>progressBar</zorder>
+   <zorder>Sroki_Svod_btn</zorder>
+   <zorder>Matrica_btn</zorder>
+   <zorder>Prosrozka_btn</zorder>
+   <zorder>BLACK_Q_btn</zorder>
+   <zorder>SPY_MIN_btn</zorder>
+   <zorder>prosrozka_exc</zorder>
+   <zorder>black_q_exc</zorder>
+   <zorder>spy_min_exc</zorder>
+   <zorder>btn_106</zorder>
+   <zorder>LinkBox</zorder>
+   <zorder>label_2</zorder>
+   <zorder>calendar107</zorder>
+   <zorder>line</zorder>
+   <zorder>label_3</zorder>
+   <zorder>reservButton</zorder>
+   <zorder>FileAisInfo</zorder>
+   <zorder>labelAisText</zorder>
+   <zorder>FileAisInfo_base</zorder>
+   <zorder>labelAisText_2</zorder>
+   <zorder>reserv_adress</zorder>
+   <zorder>tableWidget101</zorder>
+   <zorder>checkBox106</zorder>
+   <zorder>info106labelTime</zorder>
+   <zorder>date106Info</zorder>
+   <zorder>vsesrazu</zorder>
+   <zorder>send_daily_stat</zorder>
+   <zorder>changedinfo</zorder>
+   <zorder>labelchanged</zorder>
+   <zorder>BIG_ZAP</zorder>
+   <zorder>toloko</zorder>
+   <zorder>blue_submit</zorder>
+   <zorder>priloj_4</zorder>
+   <zorder>BIG_SREZ</zorder>
+   <zorder>andreeva</zorder>
+   <zorder>priloj_4_srez</zorder>
+   <zorder>otchet2859198</zorder>
+   <zorder>adi</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>adinf</zorder>
+   <zorder>SROKINF</zorder>
+   <zorder>ABinf</zorder>
+   <zorder>label</zorder>
+   <zorder>froginf</zorder>
+   <zorder>line_3</zorder>
+   <zorder>checkallTime</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>AisInfo</zorder>
+   <zorder>labelAisText_3</zorder>
+   <zorder>line_4</zorder>
+   <zorder>line_2</zorder>
+   <zorder>label_4</zorder>
+   <zorder>text107Time0</zorder>
+   <zorder>btn_25</zorder>
+   <zorder>renew_kkt</zorder>
+   <zorder>kktnalog</zorder>
+   <zorder>btn_reestr</zorder>
+   <zorder>btn_106_fc</zorder>
+   <zorder>adinf_2</zorder>
+   <zorder>SROKINF_2</zorder>
+   <zorder>ABinf_2</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>btn_107</zorder>
+   <zorder>prazdn</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1175</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Пульт</string>
+    </property>
+    <widget class="QMenu" name="menu107">
+     <property name="statusTip">
+      <string>Работа со 107</string>
+     </property>
+     <property name="title">
+      <string>107</string>
+     </property>
+     <addaction name="action_107_recalc"/>
+     <addaction name="action_107_del"/>
+    </widget>
+    <addaction name="menu107"/>
+    <addaction name="action101"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Опции</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>Настройки</string>
+     </property>
+     <addaction name="propWindow"/>
+     <addaction name="separator"/>
+     <addaction name="option_drop"/>
+    </widget>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>Резерв</string>
+     </property>
+     <addaction name="restore_csv"/>
+    </widget>
+    <addaction name="calren"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="menu_4"/>
+    <addaction name="menu_5"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>ККТ</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="kktperiod"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_107_recalc">
+   <property name="text">
+    <string>Пересчитать 107</string>
+   </property>
+   <property name="statusTip">
+    <string>Обновить данные по 107</string>
+   </property>
+  </action>
+  <action name="action_107_del">
+   <property name="text">
+    <string>Удалить заливку</string>
+   </property>
+   <property name="statusTip">
+    <string>Удалить случайно загруженный 107</string>
+   </property>
+  </action>
+  <action name="option_drop">
+   <property name="text">
+    <string>Сброс настроек</string>
+   </property>
+   <property name="statusTip">
+    <string>Сбросить настройки</string>
+   </property>
+  </action>
+  <action name="calren">
+   <property name="text">
+    <string>Обновить инфо</string>
+   </property>
+  </action>
+  <action name="propWindow">
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+   <property name="statusTip">
+    <string>Открыть настройки для приложения</string>
+   </property>
+  </action>
+  <action name="action101">
+   <property name="text">
+    <string>FroG-Info</string>
+   </property>
+   <property name="statusTip">
+    <string>Запуск Лягушки</string>
+   </property>
+  </action>
+  <action name="restore_csv">
+   <property name="text">
+    <string>Восстановить из csv</string>
+   </property>
+   <property name="statusTip">
+    <string>Восстановить из ранее подготовленных csv на чистую таблицу</string>
+   </property>
+  </action>
+  <action name="kktperiod">
+   <property name="text">
+    <string>Операции</string>
+   </property>
+  </action>
+  <action name="kktorigins">
+   <property name="text">
+    <string>Оригиналы.Zip</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,8 @@
+
+*.dat
+*.exe
+*.pyz
+*.pkg
+*.toc
+*.spec
+/build/
